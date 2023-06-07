@@ -1,0 +1,14 @@
+from collabora/code
+
+# change collabora settings future-proof
+run sed -i '/allowed_languages/ c \
+\ \ \ \ <allowed_languages>de_DE en_US hsb_DE</allowed_languages>' \
+/etc/coolwsd/coolwsd.xml
+
+# for experiments
+# copy collabora-config.xml /etc/coolwsd/coolwsd.xml
+
+copy dict-so /opt/collaboraoffice/share/extensions/dict-so
+
+
+cmd ["/start-collabora-online.sh"]

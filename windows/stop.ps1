@@ -1,0 +1,2 @@
+docker stop collabora_project_collabora
+docker stop collabora_project_nextcloud
